@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Engz Digital</title>
+
+  <!-- Bootstrap -->
+  <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- jQuery custom content scroller -->
+  <link href="./vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+
+  <!-- Custom Theme Style -->
+  <link href="./build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col menu_fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Engz Digital</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="./production/images/img.jpg" alt="..." class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Islam</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>General</h3>
+              <ul class="nav side-menu">
+
+                <!-- copy Here  button open modal-->
+                <li><a><i class="fa fa-clone"></i>Ticnical<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('data_down')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">data down</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('data_and_voice_down')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">data and voice down</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('physical_instability')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">physical instability</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('blq')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">blq</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('wrong_card_and_port')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">wrong card and port</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('logical_instability')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">logical instability</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('unable_to_obtain')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">unable to obtain</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('slowness')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">slowness</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('outage')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">outage</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('wirless')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">wirless</button></li>
+                  </ul>
+                </li>
+
+
+                <li><a><i class="fa fa-clone"></i>FTTH<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li> <button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('browsing_ftth')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">browsing</button></li>
+                    <li> <button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('wrong_card_and_port_ftth')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">wrong card and port</button></li>
+                    <li> <button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('unable_to_obtain_ftth')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">unable to obtain</button></li>
+                    <li> <button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('slowness_ftth')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">slowness</button></li>
+                  </ul>
+                </li>
+
+
+
+                <li><a><i class="fa fa-clone"></i>Non Ticnical <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('idel')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">idel</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('concession')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">concession</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('complain')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">complain</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal"
+                        onclick="setCase('Cancellation')" data-target="#exampleModaldataDown"
+                        data-whatever="@mdo">Cancellation</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('quota')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">quota</button></li>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" onclick="setCase('other')"
+                        data-target="#exampleModaldataDown" data-whatever="@mdo">other</button></li>
+                  </ul>
+                </li>
+
+
+              </ul>
+            </div>
+
+
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+          <nav class="nav navbar-nav">
+            <ul class=" navbar-right">
+
+
+              <li class="nav-item dropdown open" style="padding-left: 15px;">
+                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                  data-toggle="dropdown" aria-expanded="false">
+                  <img src="./production/images/img.jpg" alt="">Islam
+                </a>
+                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="javascript:;"> Profile</a>
+                  <a class="dropdown-item" href="javascript:;">
+                    <span class="badge bg-red pull-right">50%</span>
+                    <span>Settings</span>
+                  </a>
+                  <a class="dropdown-item" href="javascript:;">Help</a>
+                  <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                </div>
+              </li>
+
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="alert alert-success alert-dismissible fade show" id="successMessage" style="display: none;">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          Success! Your action was completed.
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="x_panel">
+                <div class="x_content">
+                  <form id="personal" novalidate>
+                    <div class="field item form-group">
+                      <label class="col-form-label col-md-3 col-sm-3  label-align">Name<span
+                          class="required">*</span></label>
+                      <div class="col-md-6 col-sm-6">
+                        <input class="form-control" data-validate-length-range="6" data-validate-words="2"
+                          id="serviceSubscription" name="name" required="required" />
+                      </div>
+                    </div>
+                    <div class="field item form-group">
+                      <label class="col-form-label col-md-3 col-sm-3  label-align">Number <span
+                          class="required">*</span></label>
+                      <div class="col-md-6 col-sm-6">
+                        <input class="form-control" type="text" class='number' id="serviceNumber" name="number"
+                          data-validate-minmax="10,100" required='required'>
+                      </div>
+                    </div>
+
+                    <div class="ln_solid">
+                      <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                          <button type='reset' class="btn btn-success">Reset</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row  justify-content-center">
+            <h1>Adsl</h1>
+          </div>
+          <div class="row ticnical">
+            <div class="col-3 ">
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  data down
+                </button>
+                <div class="dropdown-menu" id="data_down">
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  data and voice down
+                </button>
+                <div class="dropdown-menu" id="data_and_voice_down">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  Physical Instability
+                </button>
+                <div class="dropdown-menu" id="physical_instability">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  blq
+                </button>
+                <div class="dropdown-menu" id="blq">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  wrong card and port
+                </button>
+                <div class="dropdown-menu" id="wrong_card_and_port">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  logical Instability
+                </button>
+                <div class="dropdown-menu" id="logical_instability">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  unable to obtain
+                </button>
+                <div class="dropdown-menu" id="unable_to_obtain">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  slowness
+                </button>
+                <div class="dropdown-menu" id="slowness">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  outage
+                </button>
+                <div class="dropdown-menu" id="outage">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  wirless
+                </button>
+                <div class="dropdown-menu" id="wirless">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          </hr>
+
+          <div class="row justify-content-center">
+            <h1>FTTH</h1>
+          </div>
+          <div class="row ftth">
+            <!-- copy Here loop srs-->
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  data and voice down
+                </button>
+                <div class="dropdown-menu" id="data_and_voice_down_ftth">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  browsing
+                </button>
+                <div class="dropdown-menu" id="browsing_ftth">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  wrong card and port
+                </button>
+                <div class="dropdown-menu" id="wrong_card_and_port_ftth">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  unable to obtain
+                </button>
+                <div class="dropdown-menu" id=" unable_to_obtain_ftth">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  slowness
+                </button>
+                <div class="dropdown-menu" id="slowness_ftth">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          </hr>
+
+          <div class="row justify-content-center">
+            <h1>Non ticnical</h1>
+          </div>
+          <div class="row non_ticnical">
+            <div class="col-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  idel
+                </button>
+                <div class="dropdown-menu" id="idel">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  concession
+                </button>
+                <div class="dropdown-menu" id="concession">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  complain
+                </button>
+                <div class="dropdown-menu" id="complain">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  Cancellation
+                </button>
+                <div class="dropdown-menu" id="Cancellation">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  quota
+                </button>
+                <div class="dropdown-menu" id="quota">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  other
+                </button>
+                <div class="dropdown-menu" id="other">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <hr>
+          </hr>
+
+
+          <div class="row justify-content-center">
+            <h1>Tools</h1>
+          </div>
+          <div class="row Tools align-items-end">
+
+            <div class="col-11">
+              <div class="form-group">
+                <label for="url" class="col-form-label">Quota Calc:</label>
+                <input class="form-control" placeholder="MB" id="quotaCalc"></input>
+
+              </div>
+            </div>
+
+            <div class="col-1">
+              <h3 id="gb">0</h3>
+            </div>
+
+
+            <div class="col-12">
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalOp"
+                data-whatever="@mdo">option back</button>
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+
+      <div class="modal fade" id="exampleModaldataDown" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="data_down">
+                <div class="form-group">
+                  <label for="url" class="col-form-label">Title:</label>
+                  <textarea class="form-control" id="title"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="description" class="col-form-label">Description:</label>
+                  <input type="text" class="form-control" id="desc">
+                </div>
+                <div class="form-group">
+                  <label for="url" class="col-form-label">URL:</label>
+                  <textarea class="form-control" id="url"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalOp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="data_down">
+                <div class="form-group">
+                  <label for="url" class="col-form-label">Wan Ip:</label>
+                  <input class="form-control" id="Ip"></input>
+                </div>
+              </form>
+
+              <div id="ips"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="saveButtonOp">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    function setCase(caseName) {
+      localStorage.setItem("case", caseName);
+
+    }
+
+
+  </script>
+  <!-- jQuery -->
+  <script src="./vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="./vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="./vendors/nprogress/nprogress.js"></script>
+  <!-- jQuery custom content scroller -->
+  <script src="./vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="./build/js/custom.min.js"></script>
+  <script src="./production/script.js"></script>
+</body>
+
+</html>
